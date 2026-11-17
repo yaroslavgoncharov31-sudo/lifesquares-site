@@ -4,7 +4,12 @@
 body { margin:0; background:var(--bg); color:var(--fg);
   font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; }
 main { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
-.logo { width:44px; height:44px; border:6px solid var(--fg); border-radius:12px; margin-bottom:24px; }
+.brand { display:flex; align-items:center; gap:12px; margin-bottom:32px; color:var(--fg); text-decoration:none; }
+.logo { width:32px; height:32px; border:5px solid var(--fg); border-radius:9px; flex:none; }
+.wordmark { font-size:22px; font-weight:700; letter-spacing:-0.02em; }
+.brand.large { gap:16px; margin-bottom:12px; }
+.brand.large .logo { width:48px; height:48px; border-width:7px; border-radius:13px; }
+.brand.large .wordmark { font-size:34px; }
 h1 { font-size: 34px; line-height:1.2; margin: 0 0 8px; }
 h2 { font-size: 20px; margin: 36px 0 8px; }
 p, li { color: var(--fg); }
